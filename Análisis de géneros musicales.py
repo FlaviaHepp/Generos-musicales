@@ -10,19 +10,19 @@ plt.style.use('dark_background')
 
 
 generos_mus = pd.read_csv("generos_musicales.csv")
-print(generos_mus)
+print("\nEncuesta de géneros musicales\n", generos_mus)
 
-#a) Cantidad de personas para cada género musical
+#Cantidad de personas para cada género musical
 cantidad_generos = generos_mus["Género musical"].value_counts()
 print("\n", cantidad_generos, "\n")
 
-#b) Cantidad de personas mayores de 35 años que escuchan rock
+#Cantidad de personas mayores de 35 años que escuchan rock
 mayores35_rock = generos_mus[(generos_mus["Género musical"] == "Rock") & (generos_mus['Edad'] > 35)]
 print("\n", mayores35_rock, "\n")
 print("\nCantidad de personas mayores de 35 años que escuchan rock: ", len(mayores35_rock), "\n")
 
 
-#c) País en donde más se escucha el genero Pop
+#País en donde más se escucha el genero Pop
 genero_pop = generos_mus[generos_mus['Género musical'].isin(['Pop'])]
 print("Países en donde se escucha el género musical POP: \n", genero_pop, "\n")
 
@@ -35,7 +35,7 @@ print("Países en donde se escucha el género musical JAZZ: \n", genero_jazz, "\
 
 print("\nPaís en donde más se escucha el género musical JAZZ: \n", genero_jazz["País"].mode(), "\n")
 
-#d) Géneros musicales que escuchan personas entre 25 y 55 años
+#Géneros musicales que escuchan personas entre 25 y 55 años
 mayores25_menores55 = generos_mus[(generos_mus['Edad'] > 25) & (generos_mus['Edad'] < 55)]
 print("\nGéneros musicales que escuchan personas entre 25 y 55 años: \n", mayores25_menores55, "\n")
 
