@@ -112,7 +112,7 @@ Las visualizaciones permiten observar rápidamente **tendencias de preferencia m
 
 ---
 
-## 👤 Autor
+ 👤 Autor
 
 **Flavia Hepp**  
-Data Analyst en formación  
+Data Analyst 
