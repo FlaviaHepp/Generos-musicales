@@ -1,4 +1,4 @@
-# Análisis de géneros musicales según edad y país
+# 🎼 Análisis de géneros musicales según edad y país
 
 Este proyecto realiza un **análisis exploratorio de datos (EDA)** a partir de una encuesta sobre preferencias musicales, con el objetivo de **identificar patrones de consumo de géneros musicales según la edad y el país** de los encuestados.
 
